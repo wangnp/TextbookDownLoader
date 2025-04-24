@@ -8,7 +8,7 @@
 
 欢迎关注公众号：程序员王哪跑，获取更多软件及最新更新消息🥳
 
-<img src="https://foruda.gitee.com/images/1745486365177855000/ff691dbd_1489208.jpeg" width="85%">
+<img src="https://foruda.gitee.com/images/1745486365177855000/ff691dbd_1489208.jpeg" width="40%">
 
 ---
 
