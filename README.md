@@ -1,12 +1,12 @@
 
 # 📘 中小学电子教材下载器
-<img src="https://github.com/user-attachments/assets/f55ea169-3226-4df2-a391-cc6a0f9f36ee" width="60%">
+<img src="https://foruda.gitee.com/images/1745486103843634491/bc176ea6_1489208.jpeg" width="85%">
 
 一个完全免费且开源的电子教材下载工具，旨在为学生、老师和家长提供便捷的电子课本获取方式。
 
 欢迎关注公众号：程序员王哪跑，获取更多软件及最新更新消息🥳
 
-<img src="https://github.com/user-attachments/assets/0382c7eb-bfa9-4f77-82b3-35b03fa190d6" width="40%">
+<img src="https://gitee.com/maomaoda/TextbookDownLoader/raw/main/%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7.png" width="40%">
 
 ---
 

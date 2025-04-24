@@ -1,6 +1,5 @@
 import base64
 import json
-import sys
 import traceback
 
 import requests
@@ -98,28 +97,25 @@ class MyWindow(QMainWindow, Ui_MainWindow):
         self.text_download_dir.setText(f"{base_path}\\下载")
 
         # 获取公告
-        applicationInfo = getApplicationInfo()
-        if applicationInfo:
-            applicationData = applicationInfo["data"]
-            announcement = applicationData["announcement"]
-            version = float(applicationData["version"])
-            status = applicationData["status"]
-
-            self.text_log.append(announcement)
-
-            if not status:
-                QMessageBox.warning(self, "错误", "应用已关闭")
-                sys.exit(0)
-
-            if version > curr_version:
-                QMessageBox.warning(self, "请更新版本", f"发现新版本{version}，请前往【公众号：程序员王哪跑】进行更新...")
-        else:
+        # applicationInfo = getApplicationInfo()
+        # if applicationInfo:
+        #     applicationData = applicationInfo["data"]
+        #     announcement = applicationData["announcement"]
+        #     version = float(applicationData["version"])
+        #     status = applicationData["status"]
+        #
+        #     self.text_log.append(announcement)
+        #
+        #     if not status:
+        #         QMessageBox.warning(self, "错误", "应用已关闭")
+        #         sys.exit(0)
+        #
+        #     if version > curr_version:
+        #         QMessageBox.warning(self, "请更新版本", f"发现新版本{version}，请前往【公众号：程序员王哪跑】进行更新...")
+        # else:
             # 携带默认的
-            self.text_log.append("""
-            <b>更多原创软件，请关注公众号：程序员王哪跑</b><br><br>
-            公众号文章批量下载软件：<a href='https://mp.weixin.qq.com/s/VpCrR36UYxiDXDGnj1ZtZg'>https://mp.weixin.qq.com/s/VpCrR36UYxiDXDGnj1ZtZg</a><br>
-            PDF批量加水印：<a href='https://mp.weixin.qq.com/s/hAZ0a3UKyTNtMz0f2TZorg'>https://mp.weixin.qq.com/s/hAZ0a3UKyTNtMz0f2TZorg</a><br>
-            聚合翻译软件：<a href='https://mp.weixin.qq.com/s/TpGvhaE65ukK22QuMMOGlg'>https://mp.weixin.qq.com/s/TpGvhaE65ukK22QuMMOGlg</a>""")
+        self.text_log.append("""
+        <b>更多原创软件，请关注公众号：程序员王哪跑</b><br>""")
         self.text_log.append("----------------------------------------------------")
 
     def global_exception_handler(self, exc_type, exc_value, exc_traceback):
